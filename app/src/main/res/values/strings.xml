@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyLamp</string>
+    <string name="widget_2x2_description">Лампа Cabinet — компактный виджет</string>
+    <string name="widget_3x2_description">Лампа Cabinet — виджет с кнопками яркости</string>
 </resources>
