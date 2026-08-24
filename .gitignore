@@ -16,3 +16,6 @@ local.properties
 
 # Локальные секреты (пароли/токены) — никогда не пушится
 app/src/main/java/com/yahorshymanchyk/mylamp/secrets/Secrets.kt
+
+# /swarm рабочие файлы — перезаписываются на каждой новой задаче, не документация проекта
+.claude/context/
