@@ -59,6 +59,10 @@ For tasks with >50 lines of changes or spanning several files/modules, the proje
 
 MemPalace (cross-session memory) for this project uses the `SmartHome` wing.
 
+## Serena (semantic code search)
+
+Serena (MCP plugin, enabled via `.claude/settings.json` → `enabledPlugins`) provides semantic code tools (`find_symbol`, `find_referencing_symbols`, etc.), backed by a Kotlin language server. It does **not** auto-activate a project on session start — call `activate_project` with this repo's path before using any other Serena tool, otherwise calls fail with "No active project".
+
 ## Architecture
 
 MyLamp is a single-module Android app (`app`, namespace `com.yahorshymanchyk.mylamp`) built with Kotlin and Jetpack Compose. The REST screen and the home-screen widget follow a light Clean Architecture split (UI → ViewModel → Repository → DataSource, no usecase layer, no DI); the WiFi and BLE screens are still local-state-only stub screens and will get the same layering once actually implemented (see `PLAN.md`):
